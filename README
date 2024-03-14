@@ -1,11 +1,5 @@
 # Assessing the Efficacy of KNIME and Alteryx in Data Analytics and Workflow Automation
 
-
-the README file for a GitHub repository could be structured as follows:
-
-
-# Assessing the Efficacy of KNIME and Alteryx in Data Analytics and Workflow Automation
-
 This repository contains the resources and findings of a Master's thesis conducted by Ahmad Saud Azmi, focusing on the comparison between KNIME and Alteryx platforms for data analytics and workflow automation. The study provides a comprehensive evaluation of these platforms to inform technology adoption strategies in organizations.
 
 ## Thesis Overview
@@ -37,36 +31,3 @@ Follow the installation guide provided by KNIME.
 # Example installation steps for Alteryx
 Visit https://www.alteryx.com/ to request a trial or purchase a license.
 Follow the Alteryx installation instructions provided.
-```
-
-## Usage
-
-Detailed instructions on how to use the scripts and datasets for comparative analysis, including execution steps within both KNIME and Alteryx platforms.
-
-```plaintext
-# Example usage for a KNIME workflow
-Open the KNIME Analytics Platform.
-Navigate to File > Import KNIME Workflow... and select the workflow from the `/scripts` directory.
-
-# Example usage for an Alteryx workflow
-Open Alteryx Designer.
-File > Open Workflow... and choose the Alteryx workflow (.yxmd file) from the `/scripts` directory.
-```
-
-## Contributing
-
-Information on how others can contribute to the project, improve the analysis, or extend the research.
-
-## License
-
-Details about the license covering the thesis work and any code or datasets included in the repository.
-
-## Contact
-
-- Ahmad Saud Azmi - [email]
-- Supervisor: Prof. Dr. Swati Chandna - [email]
-- Co-Supervisor: Prof. Dr. Theodoros Soldatos - [email]
-
----
-
-This README template is designed to be informative, structured, and clear, reflecting the detailed nature of the thesis work and providing a comprehensive overview for users visiting the GitHub repository.
