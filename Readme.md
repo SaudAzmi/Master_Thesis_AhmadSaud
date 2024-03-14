@@ -1,6 +1,6 @@
 # Assessing the Efficacy of KNIME and Alteryx in Data Analytics and Workflow Automation
 
-This repository contains the resources and findings of a Master's thesis conducted by Ahmad Saud Azmi, focusing on the comparison between KNIME and Alteryx platforms for data analytics and workflow automation. The study provides a comprehensive evaluation of these platforms to inform technology adoption strategies in organizations.
+This repository contains the resources and findings of a Master's thesis  focusing on the comparison between KNIME and Alteryx platforms for data analytics and workflow automation. The study provides a comprehensive evaluation of these platforms to inform technology adoption strategies in organizations.
 
 ## Thesis Overview
 
@@ -9,9 +9,9 @@ The rapidly evolving landscape of business operations today necessitates the ado
 ## Repository Structure
 
 - `/docs` - Contains the full thesis document and any additional documentation related to the study.
-- `/data` - Sample datasets used in the evaluation of KNIME and Alteryx platforms.
-- `/scripts` - Custom scripts developed for data processing and analysis within KNIME and Alteryx environments.
-- `/results` - Results and comparative analysis of KNIME and Alteryx in handling various data analytics and automation tasks.
+- `/data source` - Sample datasets used in the evaluation of KNIME and Alteryx platforms.
+- `/Python scripts` - Custom scripts developed for data processing and analysis within KNIME and Alteryx environments.
+- `/Workflow` - Alteryx and knime workflows in handling various data analytics and automation covering USE CASES.
 
 ## Key Contributions
 
@@ -31,3 +31,11 @@ Follow the installation guide provided by KNIME.
 # Example installation steps for Alteryx
 Visit https://www.alteryx.com/ to request a trial or purchase a license.
 Follow the Alteryx installation instructions provided.
+
+# Example usage for a KNIME workflow
+Open the KNIME Analytics Platform.
+Navigate to File > Import KNIME Workflow... and select the workflow from the `/scripts` directory.
+
+# Example usage for an Alteryx workflow
+Open Alteryx Designer.
+File > Open Workflow... and choose the Alteryx workflow (.yxmd file) from the `/scripts` directory.
