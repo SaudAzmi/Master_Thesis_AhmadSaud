@@ -1,0 +1,738 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1038" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Prompt" selected="True" rename="Right_Prompt" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1219" y="336" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ParentId" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_HttpHeaderLog" selected="True" input="Left_" />
+                <SelectField field="Left_ResponseIndex" selected="True" input="Left_" />
+                <SelectField field="Left_Right_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_Id" selected="True" input="Left_" />
+                <SelectField field="Left_Score" selected="True" input="Left_" />
+                <SelectField field="Left_Title" selected="True" input="Left_" />
+                <SelectField field="Left_Body" selected="True" input="Left_" />
+                <SelectField field="Left_Instruction" selected="True" input="Left_" />
+                <SelectField field="Left_Prompt" selected="True" input="Left_" />
+                <SelectField field="Left_MaxTokens" selected="True" input="Left_" />
+                <SelectField field="Right_Id" selected="True" rename="Right_Id" input="Right_" />
+                <SelectField field="Right_OwnerUserId" selected="True" input="Right_" />
+                <SelectField field="Right_CreationDate" selected="True" input="Right_" />
+                <SelectField field="Right_ParentId" selected="True" input="Right_" />
+                <SelectField field="Right_Score" selected="True" rename="Right_Score" input="Right_" />
+                <SelectField field="Right_Body" selected="True" rename="SO_ANSWERS" input="Right_" />
+                <SelectField field="Left_Response" selected="True" rename="OA_ANSWERS" input="Left_" />
+                <SelectField field="Left_Suffix" selected="True" input="Left_" />
+                <SelectField field="Left_Right_Prompt" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1363" y="336" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\SAUDAZ~1\AppData\Local\Temp\Engine_43552_8471ea94408bc24e8d1bf9f3e7dab6fd_\Engine_43552_6fbdb209961dba4687d839749c49f6f4~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+        <Position x="1422" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RecordIdField>SO_ANSWERS</RecordIdField>
+          <MatchThreshold value="70" />
+          <OutputScore value="True" />
+          <OutputKey value="False" />
+          <OutputUnmatched value="False" />
+          <OutputMakeGroup value="False" />
+          <GenerateKeys value="False" />
+          <MatchFields>
+            <MatchField>
+              <FieldName>OA_ANSWERS</FieldName>
+              <Style Name="Address">
+                <PreProcess name="Strip Punctuation">
+                  <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                  <Replace>(?2 :)</Replace>
+                </PreProcess>
+                <KeyGeneration>
+                  <KeyFunction>DblMetaphoneDigits</KeyFunction>
+                  <UseWords value="False" />
+                  <IgnoreEmpty value="True" />
+                  <MaxKeyLen value="8" />
+                </KeyGeneration>
+                <Match>
+                  <MatchFunction>JaroTFIDF_Digits</MatchFunction>
+                  <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                  <WordStats>US Address.yxdb</WordStats>
+                  <MatchThreshold value="85" />
+                  <MatchWeight value="100" />
+                </Match>
+              </Style>
+            </MatchField>
+          </MatchFields>
+          <MergeMode value="False" />
+          <SourceIdField>SO_ANSWERS</SourceIdField>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1241" y="485" width="152" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 31</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings>
+            <Position x="1266" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Transaction ID">OA_ANSWERS</Value>
+              <Value name="item field">SO_ANSWERS</Value>
+              <Value name="distance">True</Value>
+              <Value name="similarity">False</Value>
+              <Value name="co-occurance">False</Value>
+              <Value name="chunk.size">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RowNames" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="X____print_int__01010101111__2__687_____print_int__11111111__2__255__Another_way__" source="R-DATA:" type="Double" />
+                <Field name="A_neato_trick_with_groupby_is_to_run_length_encoding_in_one_line____c_len_list_cgen____for_c_cgen_in_groupby_some_string____will_give_you_a_list_of_2_tuples_where_the_first_element_is_the_char_and_the_2nd_is_the_number_of_repetitions__" source="R-DATA:" type="Double" />
+                <Field name="Are_you_looking_to_get_a_list_of_objects_that_have_a_certain_attribute__If_so__a_list_comprehension_is_the_right_way_to_do_this__result____obj_for_obj_in_listOfObjs_if_hasattr_obj___attributeName___" source="R-DATA:" type="Double" />
+                <Field name="As_far_as_I_can_tell_Python__up_through_2_5__only_supports_hexadecimal___octal_literals___I_did_find_some_discussions_about_adding_binary_to_future_versions_but_nothing_definite_" source="R-DATA:" type="Double" />
+                <Field name="As_Sebastjan_said__you_first_have_to_sort_your_data__This_is_important__The_part_I_didn_t_get_is_that_in_the_example_construction_groups______uniquekeys______for_k__g_in_groupby_data__keyfunc______groups_append_list_g________Store_group_iterator_as_a_list" source="R-DATA:" type="Double" />
+                <Field name="Can_you_show_us_your_code__The_example_on_the_Python_docs_is_quite_straightforward__groups______uniquekeys______for_k__g_in_groupby_data__keyfunc_______groups_append_list_g__________Store_group_iterator_as_a_list_____uniquekeys_append_k___So_in_your_case_" source="R-DATA:" type="Double" />
+                <Field name="For_reference_future_Python_possibilities__Starting_with_Python_2_6_you_can_express_binary_literals_using_the_prefix_0b_or_0B______0b101111_47__You_can_also_use_the_new_bin_function_to_get_the_binary_representation_of_a_number______bin_173___0b10101101___" source="R-DATA:" type="Double" />
+                <Field name="Generic_views_will_usually_be_the_way_to_go__but_ultimately_you_re_free_to_handle_URLs_however_you_want__FormWizard_does_things_in_a_class_based_way__as_do_some_apps_for_RESTful_APIs__Basically_with_a_URL_you_are_given_a_bunch_of_variables_and_place_to_pr" source="R-DATA:" type="Double" />
+                <Field name="I_am_pretty_sure_this_is_one_of_the_things_due_to_change_in_Python_3_0_with_perhaps_bin___to_go_with_hex___and_oct____EDIT__lbrandy_s_answer_is_correct_in_all_cases__" source="R-DATA:" type="Double" />
+                <Field name="I_don_t_have_any_experience_with_http___www_SiteGround_com_as_a_web_host_personally____This_is_just_a_guess__but_it_s_common_for_a_shared_host_to_support_Python_and_MySQL_with_the_MySQLdb_module__e_g___GoDaddy_does_this____Try_the_following_CGI_script_to_" source="R-DATA:" type="Double" />
+                <Field name="I_don_t_know_Python_syntax__but_I_know_Ruby_can_do_it__and_it_is_rather_trivial___Let_s_say_you_want_to_add_a_method_to_Array_that_prints_the_length_to_standard_out__class_Array__def_print_length____puts_length__endend_If_you_don_t_want_to_modify_the_whol" source="R-DATA:" type="Double" />
+                <Field name="I_haven_t_been_able_to_find_anything_that_does_this_directly___I_think_you_ll_have_to_iterate_through_the_various_font_folders_on_the_system___System_Library_Fonts___Library_Fonts__and_there_can_probably_be_a_user_level_directory_as_well___Library_Fonts__" source="R-DATA:" type="Double" />
+                <Field name="I_think_____bin_pythonbar_in_dict_Foo__Is_what_you_are_thinking_of___When_trying_to_see_if_a_certain_key_exists_within_a_dictionary_in_python__python_s_version_of_a_hash_table__there_are_two_ways_to_check___First_is_the_has_key___method_attached_to_the_di" source="R-DATA:" type="Double" />
+                <Field name="I_uploaded_it_and_got_an_internal_error_Premature_end_of_script_headers_After_much_playing_around__I_found_that_if_I_had_import_cgiimport_cgitb__cgitb_enable__import_MySQLdb_It_would_give_me_a_much_more_useful_answer_and_say_that_it_was_not_installed__you" source="R-DATA:" type="Double" />
+                <Field name="I_ve_created_and_used_my_own_generic_view_classes__defining___call___so_an_instance_of_the_class_is_callable___I_really_like_it__while_Django_s_generic_views_allow_some_customization_through_keyword_arguments__OO_generic_views__if_their_behavior_is_split_" source="R-DATA:" type="Double" />
+                <Field name="If_you_plan_on_searching_anything_of_remotely_decent_size__your_best_bet_is_going_to_be_to_use_a_dictionary_or_a_set___Otherwise__you_basically_have_to_iterate_through_every_element_of_the_iterator_until_you_get_to_the_one_you_want__If_this_isn_t_necessar" source="R-DATA:" type="Double" />
+                <Field name="If_you_want_to_share_common_functionality_between_pages_I_suggest_you_look_at_custom_tags__They_re_quite_easy_to_create__and_are_very_powerful__Also__templates_can_extend_from_other_templates__This_allows_you_to_have_a_base_template_to_set_up_the_layout_o" source="R-DATA:" type="Double" />
+                <Field name="If_you_re_simply_displaying_data_from_models__why_not_use_the_Django_Generic_Views__They_re_designed_to_let_you_easy_show_data_from_a_model_without_having_to_write_your_own_view_and_stuff_about_mapping_URL_paramaters_to_views__fetching_data__handling_edge" source="R-DATA:" type="Double" />
+                <Field name="ImageMagick_delegates_the_PDF__bitmap_conversion_to_GhostScript_anyway__so_here_s_a_command_you_can_use__it_s_based_on_the_actual_command_listed_by_the_ps_alpha_delegate_in_ImageMagick__just_adjusted_to_use_JPEG_as_output___gs__q__dQUIET__dPARANOIDSAFER__" source="R-DATA:" type="Double" />
+                <Field name="In_Python_monkey_patching_generally_works_by_overwriting_a_class_or_functions_signature_with_your_own__Below_is_an_example_from_the_Zope_Wiki__from_SomeOtherProduct_SomeModule_import_SomeClassdef_speak_self_____return__ook_ook_eee_eee_eee__SomeClass_speak" source="R-DATA:" type="Double" />
+                <Field name="In_Python__there_is_a_difference_between_functions_and_bound_methods______def_foo____________print__foo__________class_A__________def_bar__self________________print__bar__________a___A_______foo__function_foo_at_0x00A98D70______a_bar__bound_method_A_bar_o" source="R-DATA:" type="Double" />
+                <Field name="Is_the_PC_likely_to_have_Acrobat_installed__I_think_Acrobat_installs_a_shell_extension_so_previews_of_the_first_page_of_a_PDF_document_appear_in_Windows_Explorer_s_thumbnail_view__You_can_get_thumbnails_yourself_via_the_IExtractImage_COM_API__which_you_ll" source="R-DATA:" type="Double" />
+                <Field name="My_preferred_way_is_the_cursor_iterator__but_setting_first_the_arraysize_property_of_the_cursor___curs_execute__select___from_people___curs_arraysize___256_for_row_in_curs______print_row__In_this_example__cx_Oracle_will_fetch_rows_from_Oracle_256_rows_at_" source="R-DATA:" type="Double" />
+                <Field name="MySQLdb_is_what_I_have_used_before__If_you_host_is_using_Python_version_2_5_or_higher__support_for_sqlite3_databases_is_built_in__sqlite_allows_you_to_have_a_relational_database_that_is_simply_a_file_in_your_filesystem____But_buyer_beware__sqlite_is_not_s" source="R-DATA:" type="Double" />
+                <Field name="No__you_were_not_dreaming___Python_has_a_pretty_excellent_list_comprehension_system_that_lets_you_manipulate_lists_pretty_elegantly__and_depending_on_exactly_what_you_want_to_accomplish__this_can_be_done_a_couple_of_ways___In_essence__what_you_re_doing_is" source="R-DATA:" type="Double" />
+                <Field name="One_possibility_is_Hudson___It_s_written_in_Java__but_there_s_integration_with_Python_projects___Hudson_embraces_Python__I_ve_never_tried_it_myself__however___Update__Sept__2011__After_a_trademark_dispute_Hudson_has_been_renamed_to_Jenkins___" source="R-DATA:" type="Double" />
+                <Field name="open_up_a_terminal__Applications__Utilities__Terminal__and_type_this_in__locate_InsertFontHere_This_will_spit_out_every_file_that_has_the_name_you_want__Warning__there_may_be_alot_to_wade_through_" source="R-DATA:" type="Double" />
+                <Field name="Second_the_Buildbot___Trac_integration__You_can_find_more_information_about_the_integration_on_the_Buildbot_website__At_my_previous_job__we_wrote_and_used_the_plugin_they_mention__tracbb____What_the_plugin_does_is_rewriting_all_of_the_Buildbot_urls_so_you" source="R-DATA:" type="Double" />
+                <Field name="Sounds_to_me_like_you_re_trying_to_combine_things_that_shouldn_t_be_combined___If_you_need_to_do_different_processing_in_your_view_depending_on_if_it_s_a_User_or_Group_object_you_re_trying_to_look_at_then_you_should_use_two_different_view_functions__On_th" source="R-DATA:" type="Double" />
+                <Field name="TeamCity_has_some_Python_integration__But_TeamCity_is___not_open_source_is_not_small__but_rather_feature_rich_is_free_for_small_mid_teams___" source="R-DATA:" type="Double" />
+                <Field name="The_canonical_way_is_to_use_the_built_in_cursor_iterator__curs_execute__select___from_people___for_row_in_curs______print_row___You_can_use_fetchall___to_get_all_rows_at_once__for_row_in_curs_fetchall________print_row__It_can_be_convenient_to_use_this_to_" source="R-DATA:" type="Double" />
+                <Field name="There_must_be_a_method_in_Cocoa_to_get_a_list_of_fonts__then_you_would_have_to_use_the_PyObjC_bindings_to_call_it___Depending_on_what_you_need_them_for__you_could_probably_just_use_something_like_the_following___import_os_def_get_font_list________fonts___" source="R-DATA:" type="Double" />
+                <Field name="There_s_also_the_way_psyco_pg_seems_to_do_it____From_what_I_gather__it_seems_to_create_dictionary_like_row_proxies_to_map_key_lookup_into_the_memory_block_returned_by_the_query__In_that_case__fetching_the_whole_answer_and_working_with_a_similar_proxy_fact" source="R-DATA:" type="Double" />
+                <Field name="Unfortunately_the_only_API_that_isn_t_deprecated_is_located_in_the_ApplicationServices_framework__which_doesn_t_have_a_bridge_support_file__and_thus_isn_t_available_in_the_bridge__If_you_re_wanting_to_use_ctypes__you_can_use_ATSFontGetFileReference_after_" source="R-DATA:" type="Double" />
+                <Field name="Unless_you_want_to_do_something_a_little_complex__using_the_generic_views_are_the_way_to_go___They_are_far_more_powerful_than_their_name_implies__and_if_you_are_just_displaying_model_data_generic_views_will_do_the_job__" source="R-DATA:" type="Double" />
+                <Field name="Using_a_list_comprehension_would_build_a_temporary_list__which_could_eat_all_your_memory_if_the_sequence_being_searched_is_large__Even_if_the_sequence_is_not_large__building_the_list_means_iterating_over_the_whole_of_the_sequence_before_in_could_start_its" source="R-DATA:" type="Double" />
+                <Field name="We_are_using_Bitten_wich_is_integrated_with_trac__And_it_s_python_based__" source="R-DATA:" type="Double" />
+                <Field name="We_run_Buildbot___Trac_at_work__I_haven_t_used_it_too_much_since_my_code_base_isn_t_part_of_the_release_cycle_yet__But_we_run_the_tests_on_different_environments__OSX_Linux_Win__and_it_sends_emails___and_it_s_written_in_python_" source="R-DATA:" type="Double" />
+                <Field name="We_use_both_Buildbot_and_Hudson_for_Jython_development___Both_are_useful__but_have_different_strengths_and_weaknesses__Buildbot_s_configuration_is_pure_Python_and_quite_simple_once_you_get_the_hang_of_it__look_at_the_epydoc_generated_API_docs_for_the_most" source="R-DATA:" type="Double" />
+                <Field name="What_I_was_thinking_of_can_be_achieved_using_list_comprehensions__but_I_thought_that_there_was_a_function_that_did_this_in_a_slightly_neater_way__i_e___bar__is_a_list_of_objects__all_of_which_have_the_attribute__id__The_mythical_functional_way__foo___12fo" source="R-DATA:" type="Double" />
+                <Field name="What_Jason_Pratt_posted_is_correct______class_Test_object_________def_a_self___________pass__________def_b_self_________pass__________Test_b___b_____type_b___type__function_______type_Test_a___type__instancemethod_______type_Test_b___type__instancemethod_" source="R-DATA:" type="Double" />
+                <Field name="What_you_re_looking_for_is_setattr_I_believe___Use_this_to_set_an_attribute_on_an_object______def_printme_s___print_repr_s_____class_A__pass____setattr_A__printme__printme_____a___A______a_printme_____s_becomes_the_implicit__self__variable_____main______A" source="R-DATA:" type="Double" />
+                <Field name="You_can_always_create_a_class__override_the___call___function_and_then_point_the_URL_file_to_an_instance_of_the_class__You_can_take_a_look_at_the_FormWizard_class_to_see_how_this_is_done__" source="R-DATA:" type="Double" />
+                <Field name="You_can_use_ImageMagick_s_convert_utility_for_this__see_some_examples_in_http___studio_imagemagick_org_pipermail_magick_users_2002_May_002636_html____Convert_taxes_pdf_taxes_jpg___Will_convert_a_two_page_PDF_file_into__2__jpeg_files__taxes_jpg_0____taxes_" source="R-DATA:" type="Double" />
+                <Field name="you_could_always_write_one_yourself__def_iterattr_iterator__attributename_______for_obj_in_iterator__________yield_getattr_obj__attributename___will_work_with_anything_that_iterates__be_it_a_tuple__list__or_whatever__I_love_python__it_makes_stuff_like_thi" source="R-DATA:" type="Double" />
+                <Field name="You_could_try_setting_up_your_own_python_installation_using_Virtual_Python___Check_out_how_to_setup_Django_using_it_here___That_was_written_a_long_time_ago__but_it_shows_how_I_got_MySQLdb_setup_without_having_root_access_or_anything_like_it___Once_you_ve_" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\MB_Affinity.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="297" height="145" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Stack Overflow question-Web Scraping</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Stack Overflow question-Web Scraping</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="223" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="JupyterCode">
+            <Position x="79" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <WorkflowName>c:\users\saud azmi\onedrive\documents\thesis\workflows\openai.yxmd</WorkflowName>
+              <JupyterProduction>false</JupyterProduction>
+              <vEnvName>designerbasetools_venv</vEnvName>
+              <DefaultVenv>1</DefaultVenv>
+              <productionModeScript />
+              <Port>55382</Port>
+              <JupyterGuidDir>86cbbf79597d8444a01a9e22e678308d</JupyterGuidDir>
+              <JupyterGuidCopy />
+              <LastExecutedByEngineVersion>2023.2.1.7</LastExecutedByEngineVersion>
+              <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","contents_keyword":"Alteryx.help()","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_css":"border: 1px solid #58a; margin: 2px;","contents_keyword":"installPackages","label":"deps"}},"outputs":[],"source":["! pip install bs4\n","# ! pip install pycontractions # The package has a depencies that have not been updated, so I couldn't use it.\n","! pip install contractions\n","! pip install autocorrect \n","! pip install nltk\n","\n","# generic librairies\n","import time as time\n","import numpy as np\n","import pandas as pd\n","import gc\n","\n","# Text librairies\n","import re\n","from bs4 import BeautifulSoup\n","import nltk\n","from nltk.tokenize import ToktokTokenizer\n","from nltk.stem.wordnet import WordNetLemmatizer\n","from nltk.stem import PorterStemmer\n","from nltk.corpus import wordnet\n","from nltk.corpus import stopwords\n","from nltk.tag.util import untag\n","import contractions\n","# import pycontractions # Alternative better package for removing contractions\n","from autocorrect import Speller\n","\n","# https://numpy.org/devdocs/user/basics.types.html\n","\n","dtypes_questions = {'Id':'int32', 'Score': 'int16', 'Title': 'str', 'Body': 'str'}\n","\n","#%%time\n","df_questions_new = pd.read_csv('C:/Users/Saud Azmi/Downloads/Questions.csv',\n","                           usecols=['Id', 'Score', 'Title', 'Body'], \n","                           encoding = \"ISO-8859-1\",\n","                           dtype=dtypes_questions,\n","                           nrows=100\n","                          )\n","\n","df_questions_new[['Title', 'Body']] = df_questions_new[['Title', 'Body']].applymap(lambda x: str(x).encode(\"utf-8\", errors='surrogatepass').decode(\"ISO-8859-1\", errors='surrogatepass'))\n","\n","\n","# Remove all questions that have a negative score\n","df_questions_new = df_questions_new[df_questions_new[\"Score\"] >= 0]\n","\n","spell = Speller()\n","token = ToktokTokenizer()\n","lemmatizer = WordNetLemmatizer()\n","stemmer = PorterStemmer()\n","charac = '!\"#$%&\\'()*+,-./:;<=>@[\\\\]^_`{|}~0123456789'\n","# stop_words = set(stopwords.words(\"english\"))\n","adjective_tag_list = set(['JJ','JJR', 'JJS', 'RBR', 'RBS']) # List of Adjective's tag from nltk package\n","\n","df_questions_new['Body'][11]\n","\n","#%%time\n","\n","# Parse question and title then return only the text\n","df_questions_new['Body'] = df_questions_new['Body'].apply(lambda x: BeautifulSoup(x, 'html.parser').get_text())\n","df_questions_new['Title'] = df_questions_new['Title'].apply(lambda x: BeautifulSoup(x, 'html.parser').get_text())\n","\n","df_questions_new['Body'][11]\n","\n","def clean_text(text):\n","    text = re.sub(r\"\\'\", \"'\", text) # match all literal apostrophe pattern then replace them by a single whitespace\n","    text = re.sub(r\"\\n\", \" \", text) # match all literal Line Feed (New line) pattern then replace them by a single whitespace\n","    text = re.sub(r\"\\xa0\", \" \", text) # match all literal non-breakable space pattern then replace them by a single whitespace\n","    text = re.sub('\\s+', ' ', text) # match all one or more whitespace then replace them by a single whitespace\n","    text = text.strip(' ')\n","    return text\n","\n","df_questions_new['Title'] = df_questions_new['Title'].apply(lambda x: clean_text(x)) \n","df_questions_new['Body'] = df_questions_new['Body'].apply(lambda x: clean_text(x))\n","\n","## 2. Remove contractions\n","def expand_contractions(text):\n","    \"\"\"expand shortened words, e.g. 'don't' to 'do not'\"\"\"\n","    text = contractions.fix(text)\n","    return text\n","\n","\n","#%%time\n","\n","df_questions_new['Title'] = df_questions_new['Title'].apply(lambda x: expand_contractions(x)) \n","df_questions_new['Body'] = df_questions_new['Body'].apply(lambda x: expand_contractions(x))\n","\n","\n","def autocorrect(text):\n","    words = token.tokenize(text)\n","    words_correct = [spell(w) for w in words]\n","    return ' '.join(map(str, words_correct)) # Return the text untokenize\n","\n","\n","df_questions_new['Title'] = df_questions_new['Title'].str.lower()\n","df_questions_new['Body'] = df_questions_new['Body'].str.lower()\n","\n","def remove_punctuation_and_number(text):\n","    \"\"\"remove all punctuation and number\"\"\"\n","    return text.translate(str.maketrans(\" \", \" \", charac)) \n","\n","\n","\n","# def remove_non_alphabetical_character(text):\n","#     \"\"\"remove all non-alphabetical character\"\"\"\n","#     text = re.sub(\"[^a-z]+\", \" \", text) # remove all non-alphabetical character\n","#     text = re.sub(\"\\s+\", \" \", text) # remove whitespaces left after the last operation\n","#     return text\n","\n","# df_questions_new['Title'] = df_questions_new['Title'].apply(lambda x: remove_non_alphabetical_character(x)) \n","# df_questions_new['Body'] = df_questions_new['Body'].apply(lambda x: remove_non_alphabetical_character(x)) \n","\n","\n","from ayx import Alteryx\n","Alteryx.write(df_questions_new,1)\n"]},{"cell_type":"code","execution_count":2,"metadata":{},"outputs":[],"source":[]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.16"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="Id" source="PythonTool:" type="Int32" />
+                <Field name="Score" source="PythonTool:" type="Int16" />
+                <Field name="Title" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Body" size="1073741823" source="PythonTool:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="462" y="70" width="481" height="265" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Pre-processing</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Pre-processing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="583" y="144" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="679" y="144" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Instruction] + &quot;(&quot; + ToString([Title]) + ToString([Body]) + &quot;)&quot;&#xA;" field="Prompt" size="1073741823" type="V_WString" />
+                <FormulaField expression="200" field="MaxTokens" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Prompt = [Instruction] + "(" + ToString([Title]) + ToString([Body]) + ")"
+
+MaxTo...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="775" y="144" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="487" y="119" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>10</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 10 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="859" y="144" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="MaxTokens" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1050" y="83" width="123" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>OpenAI</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>OpenAI</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="12">
+          <GuiSettings>
+            <Position x="1075" y="132" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Text Box (20)">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</Value>
+              <Value name="Text Box (27)">org-U08NCC85UmkBzqaHKT2Zwk91</Value>
+              <Value name="Drop Down (12)">3</Value>
+              <Value name="Input.Input"><![CDATA[RecordID=RecordID
+Prompt=Prompt
+Max_Tokens (Optional)=MaxTokens
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>OpenAI_ChatGPT_Completions (9)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="..\..\..\..\Downloads\OpenAI_ChatGPT_Completions\OpenAI_ChatGPT_Completions.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="726" y="455" width="288" height="157" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Stack Overflow Answer Web Scraping</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Stack Overflow Answer Web Scraping</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="JupyterCode">
+            <Position x="751" y="528" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <WorkflowName>c:\users\saud azmi\onedrive\documents\thesis\workflows\openai.yxmd</WorkflowName>
+              <JupyterProduction>false</JupyterProduction>
+              <vEnvName>designerbasetools_venv</vEnvName>
+              <DefaultVenv>1</DefaultVenv>
+              <productionModeScript />
+              <Port>55382</Port>
+              <JupyterGuidDir>f86756948b6f52871136495ef445e50c</JupyterGuidDir>
+              <JupyterGuidCopy />
+              <LastExecutedByEngineVersion>2023.2.1.7</LastExecutedByEngineVersion>
+              <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","contents_keyword":"Alteryx.help()","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_css":"border: 1px solid #58a; margin: 2px;","contents_keyword":"installPackages","label":"deps"},"scrolled":false},"outputs":[],"source":["\n","from ayx import Package\n","from ayx import Alteryx\n","! pip install bs4\n","# ! pip install pycontractions # The package has a depencies that have not been updated, so I couldn't use it.\n","! pip install contractions\n","! pip install autocorrect \n","# generic librairies\n","import time as time\n","import numpy as np\n","import pandas as pd\n","import gc\n","\n","# Text librairies\n","import re\n","from bs4 import BeautifulSoup\n","import nltk\n","from nltk.tokenize import ToktokTokenizer\n","from nltk.stem.wordnet import WordNetLemmatizer\n","from nltk.stem import PorterStemmer\n","from nltk.corpus import wordnet\n","from nltk.corpus import stopwords\n","from nltk.tag.util import untag\n","import contractions\n","# import pycontractions # Alternative better package for removing contractions\n","from autocorrect import Speller\n","!pip install nltk\n","\n","dtypes_questions = {'Id': 'str', 'Score': 'str', 'Body': 'str', 'OwnerUserId': 'str', 'ParentId': 'str'}\n","\n","import pandas as pd\n","\n","# Read the first 1000 records from the CSV file\n","df_questions = pd.read_csv('C:/Users/Saud Azmi/Downloads/Answers.csv',\n","                           usecols=['Id', 'OwnerUserId', 'CreationDate', 'ParentId', 'Score', 'Body'], \n","                           encoding=\"ISO-8859-1\",\n","                           dtype=dtypes_questions,\n","                           nrows=11000\n","                          )\n","\n","df_questions.info()\n","\n","# Removing HTML\n","df_questions['Body'][1]\n","\n","# %%time\n","\n","# Parse question and title then return only the text\n","df_questions['Body'] = df_questions['Body'].apply(lambda x: BeautifulSoup(x, 'html.parser').get_text())\n","# df_questions['Title'] = df_questions['Title'].apply(lambda x: BeautifulSoup(x, 'html.parser').get_text())\n","df_questions.to_csv('C:/Users/Saud Azmi/Downloads/Answer_output_1.csv', index=False)\n","\n","from ayx import Alteryx\n","Alteryx.write(df_questions,1)"]},{"cell_type":"code","execution_count":4,"metadata":{},"outputs":[],"source":[]},{"cell_type":"code","execution_count":null,"metadata":{},"outputs":[],"source":[]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.16"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="Id" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="OwnerUserId" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="CreationDate" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="ParentId" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Score" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Body" size="1073741823" source="PythonTool:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="859" y="504" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Id" selected="True" type="Int32" size="4" />
+                <SelectField field="OwnerUserId" selected="True" type="Int32" size="4" />
+                <SelectField field="ParentId" selected="True" type="Int32" size="4" />
+                <SelectField field="Score" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="90" y="251" width="141" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Instruction</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Instruction</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="115" y="300" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Instruction" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Please provide the answer for the question?</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="16" Connection="Join" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output1" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="6" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output1" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>openai</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2a224159-c641-4702-863c-c23c350b8226" />
+      <Telemetry>
+        <PreviousWorkflowId value="1e24e04e-673d-4ce2-9a03-2e98ba635b19" />
+        <OriginWorkflowId value="1e24e04e-673d-4ce2-9a03-2e98ba635b19" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

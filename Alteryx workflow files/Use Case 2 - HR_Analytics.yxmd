@@ -1,0 +1,2134 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="402" width="229" height="229" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 68</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="451" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Career Planning.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BASF OrgArea" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="BASF OrgUnit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="BASF OrgUnit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="IFAS ABC-Classif." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="IFAS Reg. Structure" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="CCPN" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Calendar Year/Month" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Organizational Unit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Organizational Unit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Company ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Company ID2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Employee" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Employee2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="First Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Last Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Job Family" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Global contract type" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Next BASF Job Grade" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Next Job / Target Position" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Next Job Role" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Next Job Family" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Priority" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Next Job Move Timing" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="Next/Target Position" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+                <Field name="HC" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Career Planning.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="127" y="547" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SAUDAZ~1\AppData\Local\Temp\Engine_8224_cfbfdfc2ebe6ff4283a2c7875159f8c9_\Engine_8224_b95739afdf054e40bb7ec83112cf614e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="199" y="451" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CCPN" selected="True" />
+                <SelectField field="Next BASF Job Grade" selected="True" />
+                <SelectField field="Next Job / Target Position" selected="True" />
+                <SelectField field="Next Job Role" selected="True" />
+                <SelectField field="Next Job Family" selected="True" />
+                <SelectField field="Priority" selected="True" />
+                <SelectField field="Next Job Move Timing" selected="True" />
+                <SelectField field="Next/Target Position" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="390" y="390" width="706" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 69</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+            <Position x="415" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinByRecPos value="False" />
+              <JoinFields>
+                <JoinInfo connection="#1">
+                  <Field field="CCPN" />
+                </JoinInfo>
+                <JoinInfo connection="#2">
+                  <Field field="CCPN" />
+                </JoinInfo>
+              </JoinFields>
+              <CartesianMode>Allow</CartesianMode>
+              <OutputJoinOnly value="False" />
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Input_#2_CCPN" selected="True" rename="Input_#2_CCPN" />
+                    <SelectField field="Input_#2_Employee" selected="True" rename="Input_#2_Employee" />
+                    <SelectField field="Input_#2_First Name" selected="True" rename="Input_#2_First Name" />
+                    <SelectField field="Input_#2_Last Name" selected="True" rename="Input_#2_Last Name" />
+                    <SelectField field="Input_#2_BASF OrgArea" selected="True" rename="Input_#2_BASF OrgArea" />
+                    <SelectField field="Input_#2_BASF OrgUnit" selected="True" rename="Input_#2_BASF OrgUnit" />
+                    <SelectField field="Input_#2_BASF OrgUnit2" selected="True" rename="Input_#2_BASF OrgUnit2" />
+                    <SelectField field="Input_#2_IFAS ABC-Classif." selected="True" rename="Input_#2_IFAS ABC-Classif." />
+                    <SelectField field="Input_#2_IFAS Reg. Structure" selected="True" rename="Input_#2_IFAS Reg. Structure" />
+                    <SelectField field="Input_#2_Calendar Year/Month" selected="True" rename="Input_#2_Calendar Year/Month" />
+                    <SelectField field="Input_#2_Organizational Unit" selected="True" rename="Input_#2_Organizational Unit" />
+                    <SelectField field="Input_#2_Organizational Unit2" selected="True" rename="Input_#2_Organizational Unit2" />
+                    <SelectField field="Input_#2_Company ID" selected="True" rename="Input_#2_Company ID" />
+                    <SelectField field="Input_#2_Company ID2" selected="True" rename="Input_#2_Company ID2" />
+                    <SelectField field="Input_#2_Employee2" selected="True" rename="Input_#2_Employee2" />
+                    <SelectField field="Input_#2_Job Family" selected="True" rename="Input_#2_Job Family" />
+                    <SelectField field="Input_#2_Global contract type" selected="True" rename="Input_#2_Global contract type" />
+                    <SelectField field="Input_#2_HC" selected="True" rename="Input_#2_HC" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="715" y="451" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>BASF OrgArea</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-12-01 23:36:13</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2023-12-01 23:36:13</StartDate>
+                  <EndDate>2023-12-01 23:36:13</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([BASF OrgArea])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="607" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="CCPN" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings>
+            <Position x="835" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"BASF OrgArea","BASF OrgUnit","BASF OrgUnit2","9-Field Grid","BASF Job Grade","CCPN","Calendar Year/Month","Central Person ID","Central Person ID2","Community 1","Company ID","Company ID2","Education Level","Employee","Employee2","Global contract type","First Name","Last Name","IFAS ABC-Classif.","IFAS Reg. Structure","Organizational Unit","Organizational Unit2","IFAS Subreg. Struct.","Job Family","Key / Critical Position","In current position since","Risk of Loss","Mobility","Readiness for Next Career Move","Personal Job Grade","Leadership Experience","HC","Calendar Year","Evaluation Period Start Date","Evaluation Period End Date","Overall Assessment","Performance Over Time Assessment","Performance","Input_#2_CCPN","Next BASF Job Grade","Next Job / Target Position","Next Job Role","Next Job Family","Priority","Next Job Move Timing","Next/Target Position"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="967" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat(DateTimeParse([Evaluation Period Start Date],&quot;%m/%d/%Y&quot;),&quot;%d-%m-%Y&quot;)" field="Evaluation Period Start Date" size="254" type="V_String" />
+                <FormulaField expression="DateTimeFormat(DateTimeParse([Evaluation Period End Date],&quot;%m/%d/%Y&quot;),&quot;%d-%m-%Y&quot;)" field="Evaluation Period End Date" size="254" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Evaluation Period Start Date = DateTimeFormat(DateTimeParse([Evaluation Period S...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1193" y="413" width="152" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 70</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1218" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Saud Azmi\OneDrive\Documents\Thesis\Workflows\Employee Career journey.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Employee Career journey.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="653" width="397" height="241" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 71</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Comptencies and Education.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BASF OrgArea" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="BASF OrgUnit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="BASF OrgUnit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Organizational Unit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Organizational Unit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="IFAS ABC-Classif." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="IFAS Reg. Structure" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="IFAS Subreg. Struct." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Job Family" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Category" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="CCPN" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Calendar Year/Month" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Central Person ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Company ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Company ID2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Date of Degree" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Education Level" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Language Proficiency" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Employee" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Employee2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="First Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Last Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="Languages" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+                <Field name="HC" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Comptencies and Education.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="150" y="810" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SAUDAZ~1\AppData\Local\Temp\Engine_8224_cfbfdfc2ebe6ff4283a2c7875159f8c9_\Engine_8224_7597ac6e2e788f458163f92873ce83c2~.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="210" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CCPN" selected="True" />
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Date of Degree" selected="True" />
+                <SelectField field="Education Level" selected="True" />
+                <SelectField field="Languages" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings>
+            <Position x="378" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">""</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1109" y="641" width="152" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 73</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1134" y="690" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Saud Azmi\OneDrive\Documents\Thesis\Workflows\education levels.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>education levels.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="377" y="905" width="552" height="181" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 75</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="402" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Nomination Readiness Rating" selected="True" />
+                <SelectField field="Position Criticality" selected="True" />
+                <SelectField field="Position" selected="True" />
+                <SelectField field="Position2" selected="True" />
+                <SelectField field="Successor" selected="True" />
+                <SelectField field="Number of incumbents" selected="True" />
+                <SelectField field="Number of successions" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="498" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Central Person ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="642" y="954" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Central Person ID" selected="True" rename="Right_Central Person ID" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="750" y="954" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Central Person ID" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="845" y="954" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Central Person ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1061" y="917" width="152" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 84</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1086" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Saud Azmi\OneDrive\Documents\Thesis\Workflows\Succession Planning.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Succession Planning.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1073" y="1145" width="157" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 85</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1098" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Saud Azmi\OneDrive\Documents\Thesis\Workflows\Employee_Talentpool.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Employee_Talentpool.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="376" y="1133" width="541" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 82</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="401" y="1182" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Talent Pool" selected="True" />
+                <SelectField field="Talent Pool Community" selected="True" />
+                <SelectField field="Talent Pool Date of Nomination" selected="True" />
+                <SelectField field="Talent Pool Responsibility" selected="True" />
+                <SelectField field="Talent Pool Detail" selected="True" />
+                <SelectField field="Talent Pool Status" selected="True" />
+                <SelectField field="Talent Pool Updated On" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="497" y="1182" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Central Person ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="617" y="1182" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Central Person ID" selected="True" rename="Right_Central Person ID" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="749" y="1182" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BASF OrgArea" selected="True" />
+                <SelectField field="BASF OrgUnit" selected="True" />
+                <SelectField field="BASF OrgUnit2" selected="True" />
+                <SelectField field="9-Field Grid" selected="True" />
+                <SelectField field="BASF Job Grade" selected="True" />
+                <SelectField field="CCPN" selected="True" />
+                <SelectField field="Calendar Year/Month" selected="True" />
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Central Person ID2" selected="True" />
+                <SelectField field="Community 1" selected="True" />
+                <SelectField field="Community 2" selected="True" />
+                <SelectField field="Company ID" selected="True" />
+                <SelectField field="Company ID2" selected="True" />
+                <SelectField field="Education Level" selected="True" />
+                <SelectField field="Employee" selected="True" />
+                <SelectField field="Employee2" selected="True" />
+                <SelectField field="Global contract type" selected="True" />
+                <SelectField field="First Name" selected="True" />
+                <SelectField field="Last Name" selected="True" />
+                <SelectField field="IFAS ABC-Classif." selected="True" />
+                <SelectField field="IFAS Reg. Structure" selected="True" />
+                <SelectField field="Organizational Unit" selected="True" />
+                <SelectField field="Organizational Unit2" selected="True" />
+                <SelectField field="IFAS Subreg. Struct." selected="True" />
+                <SelectField field="Job Family" selected="True" />
+                <SelectField field="Key / Critical Position" selected="True" />
+                <SelectField field="In current position since" selected="True" />
+                <SelectField field="Risk of Loss" selected="True" />
+                <SelectField field="Mobility" selected="True" />
+                <SelectField field="Readiness for Next Career Move" selected="True" />
+                <SelectField field="Personal Job Grade" selected="True" />
+                <SelectField field="Leadership Experience" selected="True" />
+                <SelectField field="HC" selected="True" />
+                <SelectField field="Talent Pool" selected="True" />
+                <SelectField field="Talent Pool Community" selected="True" />
+                <SelectField field="Talent Pool Date of Nomination" selected="True" />
+                <SelectField field="Talent Pool Responsibility" selected="True" />
+                <SelectField field="Talent Pool Detail" selected="True" />
+                <SelectField field="Talent Pool Status" selected="True" />
+                <SelectField field="Talent Pool Updated On" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings>
+            <Position x="833" y="1182" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"BASF OrgArea","BASF OrgUnit","BASF OrgUnit2","9-Field Grid","BASF Job Grade","CCPN","Calendar Year/Month","Central Person ID","Central Person ID2","Community 1","Community 2","Company ID","Company ID2","Education Level","Employee","Employee2","Global contract type","First Name","Last Name","IFAS ABC-Classif.","IFAS Reg. Structure","Organizational Unit","Organizational Unit2","IFAS Subreg. Struct.","Job Family","Key / Critical Position","In current position since","Risk of Loss","Mobility","Readiness for Next Career Move","Personal Job Grade","Leadership Experience","HC","Right_Central Person ID","Talent Pool","Talent Pool Community","Talent Pool Date of Nomination","Talent Pool Responsibility","Talent Pool Detail","Talent Pool Status","Talent Pool Updated On"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="64" y="1121" width="193" height="221" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 80</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="89" y="1242" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Talent pool.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BASF OrgArea" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="BASF OrgUnit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="BASF OrgUnit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="IFAS ABC-Classif." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="IFAS Reg. Structure" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="IFAS Subreg. Struct." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Organizational Unit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Organizational Unit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Central Person ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Central Person ID2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Business Contact" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Employee" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Employee2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="CCPN" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Talent Pool" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Talent Pool Community" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Talent Pool Date of Nomination" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Talent Pool Responsibility" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Talent Pool Detail" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Talent Pool Status" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Talent Pool Updated On" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="First Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Last Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="Job Family" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+                <Field name="HC" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Talent pool.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="173" y="1170" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SAUDAZ~1\AppData\Local\Temp\Engine_8224_cfbfdfc2ebe6ff4283a2c7875159f8c9_\Engine_8224_a08db9181f288e4e9698205525c0351e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="760" y="653" width="205" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 72</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="785" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_CCPN" selected="True" rename="Right_CCPN" input="Right_" />
+                    <SelectField field="Right_Central Person ID" selected="True" rename="Right_Central Person ID" input="Right_" />
+                    <SelectField field="Right_Education Level" selected="True" rename="Right_Education Level" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="881" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BASF OrgArea" selected="True" />
+                <SelectField field="BASF OrgUnit" selected="True" />
+                <SelectField field="BASF OrgUnit2" selected="True" />
+                <SelectField field="9-Field Grid" selected="True" />
+                <SelectField field="BASF Job Grade" selected="True" />
+                <SelectField field="CCPN" selected="True" />
+                <SelectField field="Calendar Year/Month" selected="True" />
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Central Person ID2" selected="True" />
+                <SelectField field="Community 1" selected="True" />
+                <SelectField field="Company ID" selected="True" />
+                <SelectField field="Company ID2" selected="True" />
+                <SelectField field="Education Level" selected="True" />
+                <SelectField field="Employee" selected="True" />
+                <SelectField field="Employee2" selected="True" />
+                <SelectField field="Global contract type" selected="True" />
+                <SelectField field="First Name" selected="True" />
+                <SelectField field="Last Name" selected="True" />
+                <SelectField field="IFAS ABC-Classif." selected="True" />
+                <SelectField field="IFAS Reg. Structure" selected="True" />
+                <SelectField field="Organizational Unit" selected="True" />
+                <SelectField field="Organizational Unit2" selected="True" />
+                <SelectField field="IFAS Subreg. Struct." selected="True" />
+                <SelectField field="Job Family" selected="True" />
+                <SelectField field="Key / Critical Position" selected="True" />
+                <SelectField field="In current position since" selected="True" />
+                <SelectField field="Risk of Loss" selected="True" />
+                <SelectField field="Mobility" selected="True" />
+                <SelectField field="Readiness for Next Career Move" selected="True" />
+                <SelectField field="Personal Job Grade" selected="True" />
+                <SelectField field="Leadership Experience" selected="True" />
+                <SelectField field="HC" selected="True" />
+                <SelectField field="Calendar Year" selected="True" />
+                <SelectField field="Evaluation Period Start Date" selected="True" />
+                <SelectField field="Evaluation Period End Date" selected="True" />
+                <SelectField field="Overall Assessment" selected="True" />
+                <SelectField field="Performance Over Time Assessment" selected="True" />
+                <SelectField field="Performance" selected="True" />
+                <SelectField field="Right_CCPN" selected="True" />
+                <SelectField field="Right_Central Person ID" selected="True" />
+                <SelectField field="Date of Degree" selected="True" />
+                <SelectField field="Right_Education Level" selected="True" />
+                <SelectField field="Languages" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="64" y="917" width="193" height="185" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 26</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="89" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Succession.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BASF OrgArea" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="BASF OrgUnit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="BASF OrgUnit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="IFAS ABC-Classif." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="IFAS Subreg. Struct." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="IFAS Reg. Structure" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="CCPN" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Calendar Year/Month" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Central Person ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Company ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Company ID2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Global contract type" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Incumbent" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Incumbent2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Incumbent Position" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Incumbent Position2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Job Family" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Organizational Unit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Organizational Unit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Nomination Readiness Rating" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Position Criticality" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Position" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Position2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Successor" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Field_25" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="HC" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Number of incumbents" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+                <Field name="Number of successions" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Succession.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="173" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SAUDAZ~1\AppData\Local\Temp\Engine_8224_cfbfdfc2ebe6ff4283a2c7875159f8c9_\Engine_8224_b9595018d9c7d4468198a0754ee395cb~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="78" width="205" height="285" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 28</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Employee profile.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BASF OrgArea" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="BASF OrgUnit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="BASF OrgUnit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="9-Field Grid" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="BASF Job Grade" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="CCPN" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Calendar Year/Month" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Central Person ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Central Person ID2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Community 1" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Community 2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Company ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Company ID2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Education Level" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Employee" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Employee2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Global contract type" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="First Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Last Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="IFAS ABC-Classif." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="IFAS Reg. Structure" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Organizational Unit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Organizational Unit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="IFAS Subreg. Struct." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Job Family" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Key / Critical Position" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="In current position since" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Risk of Loss" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Mobility" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Readiness for Next Career Move" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Personal Job Grade" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="Leadership Experience" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+                <Field name="HC" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Employee profile.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Performance and job grade.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BASF OrgArea" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="BASF OrgUnit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="BASF OrgUnit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="9-Field Grid" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="BASF Job Grade" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="CCPN" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Calendar Year" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Central Person ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Company ID" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Company ID2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Employee" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Employee2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Evaluation Period Start Date" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Evaluation Period End Date" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="First Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Last Name" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Job Family" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="IFAS Reg. Structure" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="IFAS ABC-Classif." size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Organizational Unit" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Organizational Unit2" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Overall Assessment" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Performance Over Time Assessment" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="Personal Job Grade" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+                <Field name="HC" size="254" source="File: C:\Users\Saud Azmi\Downloads\Successfactor\Successfactor\Performance and job grade.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="163" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BASF OrgArea" selected="True" />
+                <SelectField field="BASF OrgUnit" selected="True" />
+                <SelectField field="BASF OrgUnit2" selected="True" />
+                <SelectField field="9-Field Grid" selected="True" />
+                <SelectField field="BASF Job Grade" selected="True" />
+                <SelectField field="CCPN" selected="True" />
+                <SelectField field="Calendar Year/Month" selected="True" />
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Central Person ID2" selected="True" />
+                <SelectField field="Community 1" selected="True" />
+                <SelectField field="Community 2" selected="True" />
+                <SelectField field="Company ID" selected="True" />
+                <SelectField field="Company ID2" selected="True" />
+                <SelectField field="Education Level" selected="True" />
+                <SelectField field="Employee" selected="True" />
+                <SelectField field="Employee2" selected="True" />
+                <SelectField field="Global contract type" selected="True" />
+                <SelectField field="First Name" selected="True" />
+                <SelectField field="Last Name" selected="True" />
+                <SelectField field="IFAS ABC-Classif." selected="True" />
+                <SelectField field="IFAS Reg. Structure" selected="True" />
+                <SelectField field="Organizational Unit" selected="True" />
+                <SelectField field="Organizational Unit2" selected="True" />
+                <SelectField field="IFAS Subreg. Struct." selected="True" />
+                <SelectField field="Job Family" selected="True" />
+                <SelectField field="Key / Critical Position" selected="True" />
+                <SelectField field="In current position since" selected="True" />
+                <SelectField field="Risk of Loss" selected="True" />
+                <SelectField field="Mobility" selected="True" />
+                <SelectField field="Readiness for Next Career Move" selected="True" />
+                <SelectField field="Personal Job Grade" selected="True" />
+                <SelectField field="Leadership Experience" selected="True" />
+                <SelectField field="HC" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="175" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BASF OrgArea" selected="True" />
+                <SelectField field="BASF OrgUnit" selected="True" />
+                <SelectField field="BASF OrgUnit2" selected="True" />
+                <SelectField field="9-Field Grid" selected="True" />
+                <SelectField field="BASF Job Grade" selected="True" />
+                <SelectField field="CCPN" selected="True" />
+                <SelectField field="Calendar Year" selected="True" />
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Company ID" selected="True" />
+                <SelectField field="Company ID2" selected="True" />
+                <SelectField field="Employee" selected="True" />
+                <SelectField field="Employee2" selected="True" />
+                <SelectField field="Evaluation Period Start Date" selected="True" />
+                <SelectField field="Evaluation Period End Date" selected="True" />
+                <SelectField field="First Name" selected="True" />
+                <SelectField field="Last Name" selected="True" />
+                <SelectField field="Job Family" selected="True" />
+                <SelectField field="IFAS Reg. Structure" selected="True" />
+                <SelectField field="IFAS ABC-Classif." selected="True" />
+                <SelectField field="Organizational Unit" selected="True" />
+                <SelectField field="Organizational Unit2" selected="True" />
+                <SelectField field="Overall Assessment" selected="True" />
+                <SelectField field="Performance Over Time Assessment" selected="True" />
+                <SelectField field="Personal Job Grade" selected="True" />
+                <SelectField field="HC" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="618" y="78" width="516" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 34</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="751" y="163" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>HC</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-12-01 22:10:49</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>1</Operand>
+                  <StartDate>2023-12-01 22:10:49</StartDate>
+                  <EndDate>2023-12-01 22:10:49</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Full Time Employee</AnnotationText>
+              <DefaultAnnotationText>[HC] = "1"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="859" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>!=</Operator>
+                <Field>BASF OrgUnit</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-12-01 22:28:05</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>#</Operand>
+                  <StartDate>2023-12-01 22:28:05</StartDate>
+                  <EndDate>2023-12-01 22:28:05</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[BASF OrgUnit] != "#"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1003" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IIF([Overall Assessment] == &quot;High Performance&quot;, 5,&#xA;    IIF([Overall Assessment] == &quot;Good Performance&quot;, 3,&#xA;        IIF([Overall Assessment] == &quot;Lower Performance&quot;, 1, null())&#xA;    )&#xA;)&#xA;" field="Performance" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Performance = IIF([Overall Assessment] == "High Performance", 5,
+    IIF([Overal...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="643" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Central Person ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1217" y="101" width="153" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 35</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1242" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Saud Azmi\OneDrive\Documents\Thesis\Workflows\Employee Performance.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Employee Performance.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="294" y="54" width="265" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 29</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="367" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SAUDAZ~1\AppData\Local\Temp\Engine_8224_cfbfdfc2ebe6ff4283a2c7875159f8c9_\Engine_8224_407549eff022fd4a876f6a1fc1c819ee~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="427" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BASF OrgArea" selected="True" />
+                <SelectField field="BASF OrgUnit" selected="True" />
+                <SelectField field="BASF OrgUnit2" selected="True" />
+                <SelectField field="9-Field Grid" selected="True" />
+                <SelectField field="BASF Job Grade" selected="True" />
+                <SelectField field="CCPN" selected="True" />
+                <SelectField field="Calendar Year/Month" selected="True" />
+                <SelectField field="Central Person ID" selected="True" />
+                <SelectField field="Central Person ID2" selected="True" />
+                <SelectField field="Community 1" selected="True" />
+                <SelectField field="Community 2" selected="False" />
+                <SelectField field="Company ID" selected="True" />
+                <SelectField field="Company ID2" selected="True" />
+                <SelectField field="Education Level" selected="True" />
+                <SelectField field="Employee" selected="True" />
+                <SelectField field="Employee2" selected="True" />
+                <SelectField field="Global contract type" selected="True" />
+                <SelectField field="First Name" selected="True" />
+                <SelectField field="Last Name" selected="True" />
+                <SelectField field="IFAS ABC-Classif." selected="True" />
+                <SelectField field="IFAS Reg. Structure" selected="True" />
+                <SelectField field="Right_IFAS Reg. Structure" selected="False" />
+                <SelectField field="Right_IFAS ABC-Classif." selected="False" />
+                <SelectField field="Right_Organizational Unit" selected="False" />
+                <SelectField field="Right_Organizational Unit2" selected="False" />
+                <SelectField field="Organizational Unit" selected="True" />
+                <SelectField field="Organizational Unit2" selected="True" />
+                <SelectField field="IFAS Subreg. Struct." selected="True" />
+                <SelectField field="Job Family" selected="True" />
+                <SelectField field="Key / Critical Position" selected="True" />
+                <SelectField field="In current position since" selected="True" />
+                <SelectField field="Risk of Loss" selected="True" />
+                <SelectField field="Mobility" selected="True" />
+                <SelectField field="Readiness for Next Career Move" selected="True" />
+                <SelectField field="Personal Job Grade" selected="True" />
+                <SelectField field="Right_Personal Job Grade" selected="False" />
+                <SelectField field="Leadership Experience" selected="True" />
+                <SelectField field="HC" selected="True" type="Int64" size="8" />
+                <SelectField field="Right_HC" selected="False" />
+                <SelectField field="Right_BASF OrgArea" selected="False" />
+                <SelectField field="Right_BASF OrgUnit" selected="False" />
+                <SelectField field="Right_BASF OrgUnit2" selected="False" />
+                <SelectField field="Right_9-Field Grid" selected="False" />
+                <SelectField field="Right_BASF Job Grade" selected="False" />
+                <SelectField field="Right_CCPN" selected="False" />
+                <SelectField field="Calendar Year" selected="True" />
+                <SelectField field="Right_Central Person ID" selected="False" />
+                <SelectField field="Right_Company ID" selected="False" />
+                <SelectField field="Right_Company ID2" selected="False" />
+                <SelectField field="Right_Employee" selected="False" />
+                <SelectField field="Right_Employee2" selected="False" />
+                <SelectField field="Evaluation Period Start Date" selected="True" />
+                <SelectField field="Evaluation Period End Date" selected="True" />
+                <SelectField field="Right_First Name" selected="False" />
+                <SelectField field="Right_Last Name" selected="False" />
+                <SelectField field="Right_Job Family" selected="False" />
+                <SelectField field="Overall Assessment" selected="True" />
+                <SelectField field="Performance Over Time Assessment" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="475" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SAUDAZ~1\AppData\Local\Temp\Engine_8224_cfbfdfc2ebe6ff4283a2c7875159f8c9_\Engine_8224_be6e492c54dea84fabe6d5501b874037~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="319" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Central Person ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_BASF OrgArea" selected="True" rename="Right_BASF OrgArea" input="Right_" />
+                    <SelectField field="Right_BASF OrgUnit" selected="True" rename="Right_BASF OrgUnit" input="Right_" />
+                    <SelectField field="Right_BASF OrgUnit2" selected="True" rename="Right_BASF OrgUnit2" input="Right_" />
+                    <SelectField field="Right_9-Field Grid" selected="True" rename="Right_9-Field Grid" input="Right_" />
+                    <SelectField field="Right_BASF Job Grade" selected="True" rename="Right_BASF Job Grade" input="Right_" />
+                    <SelectField field="Right_CCPN" selected="True" rename="Right_CCPN" input="Right_" />
+                    <SelectField field="Right_Central Person ID" selected="True" rename="Right_Central Person ID" input="Right_" />
+                    <SelectField field="Right_Company ID" selected="True" rename="Right_Company ID" input="Right_" />
+                    <SelectField field="Right_Company ID2" selected="True" rename="Right_Company ID2" input="Right_" />
+                    <SelectField field="Right_Employee" selected="True" rename="Right_Employee" input="Right_" />
+                    <SelectField field="Right_Employee2" selected="True" rename="Right_Employee2" input="Right_" />
+                    <SelectField field="Right_First Name" selected="True" rename="Right_First Name" input="Right_" />
+                    <SelectField field="Right_Last Name" selected="True" rename="Right_Last Name" input="Right_" />
+                    <SelectField field="Right_Job Family" selected="True" rename="Right_Job Family" input="Right_" />
+                    <SelectField field="Right_IFAS Reg. Structure" selected="True" rename="Right_IFAS Reg. Structure" input="Right_" />
+                    <SelectField field="Right_IFAS ABC-Classif." selected="True" rename="Right_IFAS ABC-Classif." input="Right_" />
+                    <SelectField field="Right_Organizational Unit" selected="True" rename="Right_Organizational Unit" input="Right_" />
+                    <SelectField field="Right_Organizational Unit2" selected="True" rename="Right_Organizational Unit2" input="Right_" />
+                    <SelectField field="Right_Personal Job Grade" selected="True" rename="Right_Personal Job Grade" input="Right_" />
+                    <SelectField field="Right_HC" selected="True" rename="Right_HC" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="39" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Unique" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output26" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="47" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output26" />
+      <Destination ToolID="48" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="48" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Unique" />
+      <Destination ToolID="66" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="66" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Join" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Unique" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Unique" />
+      <Destination ToolID="78" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="78" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Join" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="81" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output26" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Unique" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>HR_Analytics_V1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2ad83e6f-3345-427a-bbf7-ceed028791f8" />
+      <Telemetry>
+        <PreviousWorkflowId value="8c1813ba-3d6d-4e9c-a005-f06213d70904" />
+        <OriginWorkflowId value="8c1813ba-3d6d-4e9c-a005-f06213d70904" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
