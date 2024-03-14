@@ -34,8 +34,8 @@ Follow the Alteryx installation instructions provided.
 
 # Example usage for a KNIME workflow
 Open the KNIME Analytics Platform.
-Navigate to File > Import KNIME Workflow... and select the workflow from the `/scripts` directory.
+Navigate to File > Import KNIME Workflow... and select the workflow from the `Knime workflow files` directory.
 
 # Example usage for an Alteryx workflow
 Open Alteryx Designer.
-File > Open Workflow... and choose the Alteryx workflow (.yxmd file) from the `/scripts` directory.
+File > Open Workflow... and choose the Alteryx workflow (.yxmd file) from the `Alteryx workflow filess` directory.
