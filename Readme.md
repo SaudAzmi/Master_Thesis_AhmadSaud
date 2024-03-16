@@ -8,7 +8,7 @@ The rapidly evolving landscape of business operations today necessitates the ado
 
 ## Repository Structure
 
-- `/docs` - Contains the full thesis document and any additional documentation related to the study.
+- `/doc` - Contains the full thesis document and any additional documentation related to the study.
 - `/data source` - Sample datasets used in the evaluation of KNIME and Alteryx platforms.
 - `/Python scripts` - Custom scripts developed for data processing and analysis within KNIME and Alteryx environments.
 - `/Workflow` - Alteryx and knime workflows in handling various data analytics and automation covering USE CASES.
